@@ -47,4 +47,6 @@ app.use(rules);
 app.use(auth);
 app.use(router);
 
-server.listen(port);
+server.listen(port, () => {
+    console.log('server is running')
+});
